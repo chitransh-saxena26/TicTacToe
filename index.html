@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="start-container">
+            <h1 class="game-title">Tic-Tac-Toe</h1>
+            <div class="welcome-txt">Welcome to Tic-Tac-Toe! Enjoy your game!</div>
+            <div class="rules">
+                <h3>Here are the basic rules for playing Tic-Tac-Toe:</h3>
+                <p>1. The game is played on a 3x3 grid. The objective is to be the first player to place three of their
+                    marks (X or O) in a horizontal, vertical, or diagonal row.</p>
+                <p>2. There are two players in the game, traditionally denoted as X and O. <b>Player One takes X</b> and
+                    <b>the other takes O</b>.
+                </p>
+                <p>3. The game begins with an empty 3x3 grid</p>
+                <p>4. Players take turns placing their mark (X or O) on an empty cell of the grid. The player with the
+                    mark X usually goes first.</p>
+                <p>5. Players can only place their mark in an empty cell. Once a cell is marked, it cannot be changed.
+                </p>
+                <p>6. A player wins if they have three of their marks in a row horizontally, vertically, or diagonally.
+                    If a player achieves this, the game is over, and that player wins.</p>
+                <p>7. If all cells on the grid are filled and no player has achieved a winning combination, the game
+                    ends in a draw.</p>
+                <p>8. The game ends when either a player wins or the game ends in a draw.</p>
+            </div>
+            <button id="start-btn" onclick="startGame()">Start Game</button>
+        </div>
+        <div class="main-container hide">
+            <h1>Tic-Tac-Toe</h1>
+            <div class="game-container">
+                <div class="game">
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="home-btn" onclick="goHome()">Home</button>
+                <button class="reset-btn">Reset Game</button>
+            </div>
+        </div>
+    </div>
+    <div class="msg-container hide">
+        <div class="message">
+            <p id="msg">Winner</p>
+            <div class="buttons">
+                <button class="home-btn" onclick="goHome()">Home</button>
+                <button class="new-btn">New Game</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
